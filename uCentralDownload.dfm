@@ -52,6 +52,7 @@ inherited frmCentralDownload: TfrmCentralDownload
         Width = 969
         Height = 23
         Anchors = [akLeft, akTop, akRight]
+        AutoSelect = False
         TabOrder = 0
         Text = 
           'https://s3.amazonaws.com/gupy5/production/companies/28089/emails' +

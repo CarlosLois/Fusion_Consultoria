@@ -17,7 +17,7 @@ object frmAcesso: TfrmAcesso
   TextHeight = 15
   object imgLogo: TImage
     Left = 112
-    Top = 76
+    Top = 68
     Width = 128
     Height = 128
     Center = True
@@ -700,9 +700,22 @@ object frmAcesso: TfrmAcesso
     ParentFont = False
     Transparent = True
   end
+  object lblProgress: TLabel
+    Left = 16
+    Top = 219
+    Width = 256
+    Height = 15
+    Caption = 'Selecione o arquivo do Banco de Dados (*.db)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 13150800
+    Font.Height = -12
+    Font.Name = 'Optima'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Panel1: TPanel
     Left = 248
-    Top = 98
+    Top = 90
     Width = 120
     Height = 35
     BevelOuter = bvNone
@@ -733,7 +746,7 @@ object frmAcesso: TfrmAcesso
   end
   object Panel2: TPanel
     Left = 248
-    Top = 146
+    Top = 138
     Width = 120
     Height = 35
     BevelOuter = bvNone
@@ -765,17 +778,18 @@ object frmAcesso: TfrmAcesso
   end
   object edtDataBase: TEdit
     Left = 16
-    Top = 224
+    Top = 240
     Width = 426
     Height = 23
+    AutoSelect = False
     TabOrder = 2
     Text = 'edtDataBase'
   end
   object pnlFindDB: TPanel
-    Left = 439
-    Top = 223
+    Left = 440
+    Top = 239
     Width = 25
-    Height = 25
+    Height = 24
     Color = 13150800
     ParentBackground = False
     TabOrder = 3
@@ -783,7 +797,7 @@ object frmAcesso: TfrmAcesso
       Left = 1
       Top = 1
       Width = 23
-      Height = 23
+      Height = 22
       Align = alClient
       Center = True
       Picture.Data = {
@@ -801,6 +815,7 @@ object frmAcesso: TfrmAcesso
       OnClick = iimsFindDBClick
       ExplicitLeft = 162
       ExplicitTop = 18
+      ExplicitHeight = 23
     end
   end
   object odgDataBase: TOpenDialog

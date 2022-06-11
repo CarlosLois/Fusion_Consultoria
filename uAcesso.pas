@@ -19,6 +19,7 @@ type
     pnlFindDB: TPanel;
     iimsFindDB: TImage;
     odgDataBase: TOpenDialog;
+    lblProgress: TLabel;
     procedure btnAcessoClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure iimsFindDBClick(Sender: TObject);
